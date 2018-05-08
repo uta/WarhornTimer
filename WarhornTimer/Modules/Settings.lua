@@ -87,6 +87,15 @@ function WarhornTimer:SettingsBuildMenu()
       end,
     },
     {
+      type    = 'checkbox',
+      name    = 'Reverse Bar Direction',
+      getFunc = function() return self.settings.reverse end,
+      setFunc = function()
+        self.settings.reverse = not self.settings.reverse
+        self:WindowApplySettings()
+      end,
+    },
+    {
       type    = 'colorpicker',
       name    = 'Bar Color Left',
       getFunc = function() return self.settings.colorBar[1], self.settings.colorBar[2], self.settings.colorBar[3], self.settings.colorBar[4] end,
@@ -164,6 +173,7 @@ function WarhornTimer:SettingsLoad()
     width           = 200,
     height          = 30,
     textSize        = 20,
+    reverse         = false,
     colorBar        = {1,0,0,1,0,1,0,1},
     colorEdge       = {0,0,0,1},
     colorBackground = {0.2,0.2,0.2,0.4},

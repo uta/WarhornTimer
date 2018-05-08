@@ -9,6 +9,15 @@ function WarhornTimer:WindowApplySettings()
   self.window.background:SetEdgeColor(unpack(self.settings.colorEdge))
   self.window.background:SetCenterColor(unpack(self.settings.colorBackground))
   self.window.bar:SetGradientColors(unpack(self.settings.colorBar))
+  if self.settings.reverse then
+    self.window.bar:SetBarAlignment(1)
+    self.window.icon:ClearAnchors()
+    self.window.icon:SetAnchor(LEFT, self.window.container, RIGHT, -1, 0)
+  else
+    self.window.bar:SetBarAlignment(0)
+    self.window.icon:ClearAnchors()
+    self.window.icon:SetAnchor(RIGHT, self.window.container, LEFT, -1, 0)
+  end
   self.window.label:SetFont('$(BOLD_FONT)|'..tostring(self.settings.textSize)..'|soft-shadow-thin')
   self.window.icon:SetHidden(not self.settings.showIcon)
   self.window.icon:SetWidth(self.settings.iconSize)
@@ -40,7 +49,6 @@ function WarhornTimer:WindowCreate()
   self.window.label:SetColor(1, 1, 1, 1)
 
   self.window.icon = WINDOW_MANAGER:CreateControl('$(parent)Icon', self.window.container, CT_TEXTURE)
-  self.window.icon:SetAnchor(RIGHT, self.window.container, LEFT, -1,0)
 
   self:WindowSetValue(0)
 
