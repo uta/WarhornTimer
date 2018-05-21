@@ -1,8 +1,7 @@
 ## Title: |c3366ccWarhornTimer|r
-## Description: ESO addon to track warhorn timer in group/raid
 ## Author: Uta
-## Version: 1.18.1
-## APIVersion: 100023 100022
+## Version: 1.18.2
+## APIVersion: 100023
 ## SavedVariables: WarhornTimerSavedVariables
 ## OptionalDependsOn: LibAddonMenu-2.0 LibStub
 
