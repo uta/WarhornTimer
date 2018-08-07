@@ -10,7 +10,7 @@ end
 
 function WarhornTimer.EventEffectChanged(eventCode, changeType, effectSlot, effectName, unitTag, beginTime, endTime, stackCount, iconName, buffType, effectType, abilityType, statusEffectType, unitName, unitId, abilityId, sourceType)
   if sourceType == COMBAT_UNIT_TYPE_PLAYER or sourceType == COMBAT_UNIT_TYPE_GROUP then
-    if changeType == EFFECT_RESULT_GAINED then
+    if WarhornTimer.targetEffectTypes[changeType] then
       if WarhornTimer.abilityIdList[abilityId] then
         WarhornTimer:WindowStart(beginTime, endTime, iconName)
       end

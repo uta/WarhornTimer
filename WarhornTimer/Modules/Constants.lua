@@ -1,7 +1,12 @@
 WarhornTimer = {
   name    = 'WarhornTimer',
-  version = '1.18.2',
+  version = '1.19.0',
   author  = 'Uta',
+}
+
+WarhornTimer.targetEffectTypes = {
+  [EFFECT_RESULT_GAINED]  = true,
+  [EFFECT_RESULT_UPDATED] = true,
 }
 
 WarhornTimer.abilityIdList = {
