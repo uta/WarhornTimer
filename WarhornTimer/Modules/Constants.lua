@@ -1,6 +1,6 @@
 WarhornTimer = {
   name    = 'WarhornTimer',
-  version = '1.19.1',
+  version = '1.19.2',
   author  = 'Uta',
 }
 
