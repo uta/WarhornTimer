@@ -138,6 +138,15 @@ function WarhornTimer:SettingsBuildMenu()
       end,
     },
     {
+      type    = 'colorpicker',
+      name    = 'Text Color',
+      getFunc = function() return unpack(self.settings.colorLabel) end,
+      setFunc = function(r,g,b,a)
+        self.settings.colorLabel = {r,g,b,a}
+        self:WindowApplySettings()
+      end,
+    },
+    {
       type    = 'checkbox',
       name    = 'Show Icon',
       getFunc = function() return self.settings.showIcon end,
@@ -155,6 +164,15 @@ function WarhornTimer:SettingsBuildMenu()
       getFunc = function() return self.settings.iconSize end,
       setFunc = function(number)
         self.settings.iconSize = number
+        self:WindowApplySettings()
+      end,
+    },
+    {
+      type    = 'colorpicker',
+      name    = 'Icon Color',
+      getFunc = function() return unpack(self.settings.iconColor) end,
+      setFunc = function(r,g,b,a)
+        self.settings.iconColor = {r,g,b,a}
         self:WindowApplySettings()
       end,
     },
@@ -177,8 +195,10 @@ function WarhornTimer:SettingsLoad()
     colorBar        = {1,0,0,1,0,1,0,1},
     colorEdge       = {0,0,0,1},
     colorBackground = {0.2,0.2,0.2,0.4},
+    colorLabel      = {1,1,1,1},
     showIcon        = true,
     iconSize        = 30,
+    iconColor       = {1,1,1,1},
     iconTexture     = '/esoui/art/icons/ability_ava_003.dds',
   }
 
