@@ -1,18 +1,9 @@
 ## Title: WarhornTimer
 ## Author: Uta
-## Version: 1.21.0
-## APIVersion: 100025 100026
+## Version: 1.21.1
+## APIVersion: 100026
 ## SavedVariables: WarhornTimerSavedVariables
-## OptionalDependsOn: LibAddonMenu-2.0 LibStub
-
-Libraries/LibStub/LibStub.lua
-
-Libraries/LibAddonMenu-2.0/LibAddonMenu-2.0.lua
-Libraries/LibAddonMenu-2.0/controls/checkbox.lua
-Libraries/LibAddonMenu-2.0/controls/colorpicker.lua
-Libraries/LibAddonMenu-2.0/controls/header.lua
-Libraries/LibAddonMenu-2.0/controls/panel.lua
-Libraries/LibAddonMenu-2.0/controls/slider.lua
+## DependsOn: LibAddonMenu-2.0 LibStub
 
 Modules/Constants.lua
 Modules/Events.lua
