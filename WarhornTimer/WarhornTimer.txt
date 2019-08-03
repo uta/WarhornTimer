@@ -1,7 +1,7 @@
 ## Title: WarhornTimer
 ## Author: Uta
-## Version: 1.22.0
-## APIVersion: 100026, 100027
+## Version: 1.23.0
+## APIVersion: 100027, 100028
 ## SavedVariables: WarhornTimerSavedVariables
 ## DependsOn: LibAddonMenu-2.0 LibStub
 
