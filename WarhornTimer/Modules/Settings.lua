@@ -1,6 +1,4 @@
 function WarhornTimer:SettingsBuildMenu()
-  local LAM2 = LibStub('LibAddonMenu-2.0')
-
   local addonPanel = {
     type                = 'panel',
     name                = self.name,
@@ -178,8 +176,8 @@ function WarhornTimer:SettingsBuildMenu()
     },
   }
 
-  LAM2:RegisterAddonPanel('WarhornTimerPanel', addonPanel)
-  LAM2:RegisterOptionControls('WarhornTimerPanel', optionControls)
+  LibAddonMenu2:RegisterAddonPanel('WarhornTimerPanel', addonPanel)
+  LibAddonMenu2:RegisterOptionControls('WarhornTimerPanel', optionControls)
 end
 
 function WarhornTimer:SettingsLoad()
