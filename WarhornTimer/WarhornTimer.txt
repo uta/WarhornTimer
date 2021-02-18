@@ -1,7 +1,7 @@
 ## Title: WarhornTimer
-## Version: 1.28.0
-## AddOnVersion: 12800
-## APIVersion: 100032 100033
+## Version: 1.29.0
+## AddOnVersion: 12900
+## APIVersion: 100033 100034
 ## Author: Uta
 ## SavedVariables: WarhornTimerSavedVariables
 ## DependsOn: LibAddonMenu-2.0
